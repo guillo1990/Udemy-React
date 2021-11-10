@@ -1,13 +1,16 @@
-let arr = [1,2,3,4];
+/*function getActiveUser(name){
+    return {
+        uid: "4233245",
+        username: name
+    }
+};*/
 
-let arr2 = [...arr];
-//console.table(persona);
-arr2.push(5);
+const getActiveUser = (name) => (
+    {
+        uid: "4233245",
+        username: name
+    });
 
-let arr3 = arr2.map(function(num){
-    return num * 3;
-})
-console.log(arr);
-console.log(arr2);
-console.log(arr3);
+let user = getActiveUser("William");
 
+console.log( user )
