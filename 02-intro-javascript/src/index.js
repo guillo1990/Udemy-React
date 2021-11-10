@@ -1,19 +1,13 @@
-const persona = {
-    nom: 'Bruce',
-    cognom: 'Banner',
-    edat: '47',
-    direccio: {
-        ciutat: 'Chicago',
-        zip: '02938',
-        lat: 34.23123123,
-        lng: 33.41321231
-    }
-};
+let arr = [1,2,3,4];
 
-const persona2 = {...persona};
-
-persona2.nom = "Tony";
-
+let arr2 = [...arr];
 //console.table(persona);
-console.log(persona);
-console.log(persona2);
+arr2.push(5);
+
+let arr3 = arr2.map(function(num){
+    return num * 3;
+})
+console.log(arr);
+console.log(arr2);
+console.log(arr3);
+
