@@ -17,4 +17,9 @@ PrimeraApp.propTypes = {
     sec: PropTypes.string.isRequired 
 };
 
+PrimeraApp.defaultProps = {
+    str: 'Hello World',
+    sec: 'My First App'
+};
+
 export default PrimeraApp;
