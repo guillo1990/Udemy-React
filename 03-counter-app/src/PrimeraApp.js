@@ -1,4 +1,5 @@
 import { Fragment } from "react";
+import PropTypes from 'prop-types';
 
 const PrimeraApp = ({str, sec}) => {
 
@@ -10,5 +11,10 @@ const PrimeraApp = ({str, sec}) => {
     );
 
 }
+
+PrimeraApp.propTypes = {
+    str: PropTypes.string.isRequired,
+    sec: PropTypes.string.isRequired 
+};
 
 export default PrimeraApp;
